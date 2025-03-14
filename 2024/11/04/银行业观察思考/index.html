@@ -1,0 +1,274 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>银行业观察与思考 | LEX</title><meta name="author" content="Lex Ketize"><meta name="copyright" content="Lex Ketize"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="引言：回顾我服务银行的工作经历，对银行IT技术有了些许接触，对中国大陆的金融体系以及银行的组织架构也有了一定的认识和总结，特作此篇。 分为以下部分： 1、中国大陆的大致金融体系 2、中国建设银行的内部组织架构 中国大陆的大致金融体系 中国大陆的金融体系发展历史可以追溯到清末，但其现代化进程主要发生在新中国成立后的各个阶段 本文只讨论改革开放之后（1978年之后），金融体系开始从单一银行制向分工协作">
+<meta property="og:type" content="article">
+<meta property="og:title" content="银行业观察与思考">
+<meta property="og:url" content="https://ketize.github.io/2024/11/04/%E9%93%B6%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F%E6%80%9D%E8%80%83/index.html">
+<meta property="og:site_name" content="LEX">
+<meta property="og:description" content="引言：回顾我服务银行的工作经历，对银行IT技术有了些许接触，对中国大陆的金融体系以及银行的组织架构也有了一定的认识和总结，特作此篇。 分为以下部分： 1、中国大陆的大致金融体系 2、中国建设银行的内部组织架构 中国大陆的大致金融体系 中国大陆的金融体系发展历史可以追溯到清末，但其现代化进程主要发生在新中国成立后的各个阶段 本文只讨论改革开放之后（1978年之后），金融体系开始从单一银行制向分工协作">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://ketize.github.io/images/%E9%93%B6%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F%E4%B8%8E%E6%80%9D%E8%80%83/BankResearch41.jpg">
+<meta property="article:published_time" content="2024-11-03T16:00:00.000Z">
+<meta property="article:modified_time" content="2025-01-26T08:36:50.988Z">
+<meta property="article:author" content="Lex Ketize">
+<meta property="article:tag" content="银行">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ketize.github.io/images/%E9%93%B6%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F%E4%B8%8E%E6%80%9D%E8%80%83/BankResearch41.jpg"><link rel="shortcut icon" href="/%5Bobject%20Object%5D"><link rel="canonical" href="https://ketize.github.io/2024/11/04/%E9%93%B6%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F%E6%80%9D%E8%80%83/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="manifest" href="/null"/><link rel="apple-touch-icon" sizes="180x180" href="/images/AVATAR/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/images/AVATAR/favicon-32x32.ico"/><link rel="icon" type="image/png" sizes="16x16" href="/images/AVATAR/favicon-16x16.ico"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '银行业观察与思考',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  isShuoshuo: false
+}</script><link rel="stylesheet" href="/css/custom.css"><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/images/AVATAR/mainavatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">31</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">20</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">9</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-heart"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-comments"></i><span> 家庭</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="https://ketize.github.io/categories/Family-Events"><i class="fa-fw fas fa-calendar-check"></i><span> 大事记</span></a></li><li><a class="site-page child" href="https://ketize.github.io/categories/Family-Notes"><i class="fa-fw fas fa-icons"></i><span> 小日常</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-chart-line"></i><span> 投资</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="https://ketize.github.io/categories/Invest-Crypto"><i class="fa-fw fas fa-donate"></i><span> 币圈</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-dollar-sign"></i><span> 商业</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="https://ketize.github.io/categories/Business-Module"><i class="fa-fw fas fa-sitemap"></i><span> 商业模式</span></a></li><li><a class="site-page child" href="https://ketize.github.io/categories/Business-Project"><i class="fa-fw fas fa-hammer"></i><span> 创业项目</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-atom"></i><span> 技术</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="https://ketize.github.io/categories/Tech-IT"><i class="fa-fw fas fa-code"></i><span> IT</span></a></li><li><a class="site-page child" href="https://ketize.github.io/categories/Tech-Design"><i class="fa-fw fas fa-drafting-compass"></i><span> 设计</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-edit"></i><span> 随笔</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="https://ketize.github.io/categories/Essay"><i class="fa-fw fas fa-list-alt"></i><span> 笔记</span></a></li><li><a class="site-page child" href="https://ketize.github.io/categories/Mind"><i class="fa-fw fas fa-pencil-alt"></i><span> 想法</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/images/银行业观察与思考/BankResearch41.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"></a><a class="nav-page-title" href="/"><span class="site-name">银行业观察与思考</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-heart"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-comments"></i><span> 家庭</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="https://ketize.github.io/categories/Family-Events"><i class="fa-fw fas fa-calendar-check"></i><span> 大事记</span></a></li><li><a class="site-page child" href="https://ketize.github.io/categories/Family-Notes"><i class="fa-fw fas fa-icons"></i><span> 小日常</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-chart-line"></i><span> 投资</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="https://ketize.github.io/categories/Invest-Crypto"><i class="fa-fw fas fa-donate"></i><span> 币圈</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-dollar-sign"></i><span> 商业</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="https://ketize.github.io/categories/Business-Module"><i class="fa-fw fas fa-sitemap"></i><span> 商业模式</span></a></li><li><a class="site-page child" href="https://ketize.github.io/categories/Business-Project"><i class="fa-fw fas fa-hammer"></i><span> 创业项目</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-atom"></i><span> 技术</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="https://ketize.github.io/categories/Tech-IT"><i class="fa-fw fas fa-code"></i><span> IT</span></a></li><li><a class="site-page child" href="https://ketize.github.io/categories/Tech-Design"><i class="fa-fw fas fa-drafting-compass"></i><span> 设计</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-edit"></i><span> 随笔</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="https://ketize.github.io/categories/Essay"><i class="fa-fw fas fa-list-alt"></i><span> 笔记</span></a></li><li><a class="site-page child" href="https://ketize.github.io/categories/Mind"><i class="fa-fw fas fa-pencil-alt"></i><span> 想法</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">银行业观察与思考</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-11-03T16:00:00.000Z" title="Created 2024-11-04 00:00:00">2024-11-04</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2025-01-26T08:36:50.988Z" title="Updated 2025-01-26 16:36:50">2025-01-26</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Business-Module/">Business-Module</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1 id="引言："><a href="#引言：" class="headerlink" title="引言："></a>引言：</h1><p>回顾我服务银行的工作经历，对银行IT技术有了些许接触，对中国大陆的金融体系以及银行的组织架构也有了一定的认识和总结，特作此篇。</p>
+<p>分为以下部分：</p>
+<p>1、中国大陆的大致金融体系</p>
+<p>2、中国建设银行的内部组织架构</p>
+<h1 id="中国大陆的大致金融体系"><a href="#中国大陆的大致金融体系" class="headerlink" title="中国大陆的大致金融体系"></a>中国大陆的大致金融体系</h1><blockquote>
+<p>中国大陆的金融体系发展历史可以追溯到清末，但其现代化进程主要发生在新中国成立后的各个阶段</p>
+<p>本文只讨论改革开放之后（1978年之后），金融体系开始从单一银行制向分工协作的多元化体系转变，中国人民银行恢复中央银行职能，商业银行的功能逐步从中分离出来</p>
+<p>中国大陆金融体系逐步完善,形成了以银行体系为主体,多种金融机构并存的金融中介体系格局<br>在借鉴西方国家金融中介体系,以及遵循国际通行做法的基础上,中国大陆的金融中介体系也形成了自己的特色</p>
+</blockquote>
+<h2 id="银行类机构"><a href="#银行类机构" class="headerlink" title="银行类机构"></a>银行类机构</h2><blockquote>
+<p>银行类机构包含开发性金融机构,、政策性银行、 国有大型商业银行,、全国性股份制商业银行等等</p>
+</blockquote>
+<h3 id="开发性金融机构"><a href="#开发性金融机构" class="headerlink" title="开发性金融机构"></a>开发性金融机构</h3><h4 id="国家开发银行"><a href="#国家开发银行" class="headerlink" title="国家开发银行"></a>国家开发银行</h4><p>开发性金融机构, 目前只有一家, 即国家开发银行</p>
+<p> 国家开发银行的主要任务是, </p>
+<p><strong>按照国家有关政策, 筹集和引导境内外资金, 向国家基础设施, 基础产业及支柱产业的大中型基本建设, 和技术改造等政策项目, 及其配套工程发放贷款</strong></p>
+<p>资金来源</p>
+<p>资金来源上, 对固定资产投资总量进行控制和调节, 优化投资结构, </p>
+<h4 id="政策性银行"><a href="#政策性银行" class="headerlink" title="政策性银行"></a>政策性银行</h4><p>政策性银行是由政府投资设立的, 根据政府的决策和意向, 专门从事政策性金融业务的银行, 他们的活动不以盈利为目的, 并且根据具体分工的不同, 服务于特定的领域, 所以又称政策性专业银行,</p>
+<p>目前我国政策性银行有两家, 中国进出口银行和中国农业发展银行, </p>
+<h5 id="中国进出口银行"><a href="#中国进出口银行" class="headerlink" title="中国进出口银行"></a>中国进出口银行</h5><p>中国进出口银行的主要任务, 是执行国家产业政策和外贸政策, 为资本性货物出口提供政策性金融支持</p>
+<h5 id="中国农业发展银行"><a href="#中国农业发展银行" class="headerlink" title="中国农业发展银行"></a>中国农业发展银行</h5><p> 中国农业发展银行的主要任务, 是按照国家相关政策, 以国家信用为基础, 筹集农业政策信贷资金, 承担国家规定的农业政策性金融业务, 代理财政性资农资金的拨付, 为农业和农村经济发展服务, </p>
+<h4 id="国有大型商业银行"><a href="#国有大型商业银行" class="headerlink" title="国有大型商业银行"></a>国有大型商业银行</h4><p>中国工商银行, 中国农业银行, 中国银行, 中国建设银行, 交通银行, 和中国邮政储蓄银行, 简称六大行, 在我国金融中介体系中处于主体地位,</p>
+<p>目前无论是在人员和机构网点数量上, 还是在资产规模及市场占有份额上, 六大行在我国金融领域中, 均处于举足轻重的地位, 在世界大银行排序中也位居前列, 2018年, 在全球银行排名中, 中国国有银行独占前五席中的四席, 美国摩根大通银行名列第五, </p>
+<h4 id="全国性股份制商业银行"><a href="#全国性股份制商业银行" class="headerlink" title="全国性股份制商业银行"></a>全国性股份制商业银行</h4><h2 id="证券类机构"><a href="#证券类机构" class="headerlink" title="证券类机构"></a>证券类机构</h2><h2 id="证券公司"><a href="#证券公司" class="headerlink" title="证券公司"></a>证券公司</h2><h2 id="基金管理公司"><a href="#基金管理公司" class="headerlink" title="基金管理公司"></a>基金管理公司</h2><h2 id="期货公司"><a href="#期货公司" class="headerlink" title="期货公司"></a>期货公司</h2><h2 id="保险业"><a href="#保险业" class="headerlink" title="保险业"></a>保险业</h2><h3 id="人身保险"><a href="#人身保险" class="headerlink" title="人身保险"></a>人身保险</h3><h3 id="财产保险"><a href="#财产保险" class="headerlink" title="财产保险"></a>财产保险</h3><h3 id="再保险公司"><a href="#再保险公司" class="headerlink" title="再保险公司"></a>再保险公司</h3><h3 id="政策性公司"><a href="#政策性公司" class="headerlink" title="政策性公司"></a>政策性公司</h3><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="金融资产管理公司"><a href="#金融资产管理公司" class="headerlink" title="金融资产管理公司"></a>金融资产管理公司</h3><h3 id="金融租赁公司等其他类金融机构"><a href="#金融租赁公司等其他类金融机构" class="headerlink" title="金融租赁公司等其他类金融机构"></a>金融租赁公司等其他类金融机构</h3><h1 id="中国建设银行总行内部组织架构"><a href="#中国建设银行总行内部组织架构" class="headerlink" title="中国建设银行总行内部组织架构"></a>中国建设银行总行内部组织架构</h1><p>截至2023年末，建设银行总行业务部门分为六大板块</p>
+<p>分别为：</p>
+<p>公司金融板块、资金资管板块、个人金融板块、风险管理板块、科技渠运板块和综合管理板块</p>
+<p>总行共有内设部门40个（含2个分行级专营机构，分别为资金管理板块下的贵金属及大宗商品业务部和个人金额板块下的信用卡中心），其中属于公司金融板块的总行部门7个；资金资管板块的总行部门5个；个人金融板块的总行部门5个；风险管理板块的总行部门7个；科技渠运板块的总行部门5个；综合管理板块的总行部门11个。</p>
+<p>总行另有<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=Mzg5NjgwOTg2MQ==&mid=2247487258&idx=1&sn=1dd182c785a216564316606381bfcbd4&scene=21#wechat_redirect">审计部</a>直接向董事会汇报。</p>
+<p>此外，建设银行在公司金融板块、资金资管板块、个人金融板块和科技渠运板块下属均有子公司。其中公司金融板块的子公司6家；资金资管板块的子公司6家；个人金融板块的子公司5家；科技渠运板块子公司1家。</p>
+<p>这些子公司中涉及金融租赁（如建信金融租赁有限公司）、保险（如建信财产保险有限公司和建信人寿保险股份有限公司）、金融资产投资公司（建信金融资产投资公司）、期货（建信期货有限责任公司）、信托（建信信托有限责任公司）、理财（建信理财有限责任公司）、消费金融公司、银行等多个金融业务。</p>
+<h2 id="建设银行总行组织架构图如下："><a href="#建设银行总行组织架构图如下：" class="headerlink" title="建设银行总行组织架构图如下："></a>建设银行总行组织架构图如下：</h2><p><img src="/images/%E9%93%B6%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F%E4%B8%8E%E6%80%9D%E8%80%83/BankResearch.png" alt="BankResearch.png"></p>
+<h3 id="公司金融板块"><a href="#公司金融板块" class="headerlink" title="公司金融板块"></a>公司金融板块</h3><h4 id="业务范围"><a href="#业务范围" class="headerlink" title="业务范围"></a>业务范围</h4><p>建行的公司金融板块涵盖了企业融资、资金管理、投资银行、国际业务等多个领域，致力于为各类企业提供全方位的金融解决方案。</p>
+<h5 id="（1）企业融资"><a href="#（1）企业融资" class="headerlink" title="（1）企业融资"></a>（1）企业融资</h5><ul>
+<li><strong>贷款服务</strong>：<ul>
+<li><strong>流动资金贷款</strong>：解决企业日常经营中的资金需求。</li>
+<li><strong>项目贷款</strong>：支持基础设施建设、能源开发等中长期项目。</li>
+<li><strong>贸易融资</strong>：包括国内信用证、票据贴现、保理业务等。</li>
+</ul>
+</li>
+<li><strong>债务融资工具</strong>：<ul>
+<li>协助企业发行债券，如中期票据、短期融资券、企业债等。</li>
+</ul>
+</li>
+<li><strong>绿色融资</strong>：<ul>
+<li>为环保、低碳经济项目提供资金支持，如清洁能源、可持续建筑项目等。</li>
+</ul>
+</li>
+</ul>
+<h5 id="（2）资金管理"><a href="#（2）资金管理" class="headerlink" title="（2）资金管理"></a>（2）资金管理</h5><ul>
+<li><strong>现金管理服务</strong>：<ul>
+<li>包括账户管理、支付结算、资金归集和现金流监控等。</li>
+</ul>
+</li>
+<li><strong>供应链金融</strong>：<ul>
+<li>提供在线供应链融资服务，支持上下游企业的资金流动。</li>
+</ul>
+</li>
+<li><strong>跨境资金管理</strong>：<ul>
+<li>为跨国公司提供全球资金归集和调拨服务。</li>
+</ul>
+</li>
+</ul>
+<h5 id="（3）投资银行业务"><a href="#（3）投资银行业务" class="headerlink" title="（3）投资银行业务"></a>（3）投资银行业务</h5><ul>
+<li><strong>并购与重组</strong>：<ul>
+<li>提供并购咨询、融资安排、资产重组等服务。</li>
+</ul>
+</li>
+<li><strong>股权融资</strong>：<ul>
+<li>协助企业上市、私募股权融资。</li>
+</ul>
+</li>
+<li><strong>财务顾问</strong>：<ul>
+<li>提供企业战略咨询、融资方案设计等专业服务。</li>
+</ul>
+</li>
+</ul>
+<h5 id="（4）国际业务"><a href="#（4）国际业务" class="headerlink" title="（4）国际业务"></a>（4）国际业务</h5><ul>
+<li><strong>跨境贸易金融</strong>：<ul>
+<li>包括国际信用证、跨境结算、出口押汇等。</li>
+</ul>
+</li>
+<li><strong>外汇服务</strong>：<ul>
+<li>提供外汇交易、远期结售汇、汇率避险工具等。</li>
+</ul>
+</li>
+<li><strong>“一带一路”支持</strong>：<ul>
+<li>支持参与“一带一路”项目的企业，提供融资、结算等综合服务。</li>
+</ul>
+</li>
+</ul>
+<h5 id="（5）特色服务"><a href="#（5）特色服务" class="headerlink" title="（5）特色服务"></a>（5）特色服务</h5><ul>
+<li><strong>普惠金融</strong>：<ul>
+<li>服务于中小微企业，提供简化流程的贷款和金融产品。</li>
+</ul>
+</li>
+<li><strong>科技赋能</strong>：<ul>
+<li>通过金融科技手段，如区块链、人工智能，提供智能化服务。</li>
+</ul>
+</li>
+<li><strong>绿色金融</strong>：<ul>
+<li>推动环保项目融资和可持续发展资金支持。</li>
+</ul>
+</li>
+</ul>
+<h4 id="服务对象"><a href="#服务对象" class="headerlink" title="服务对象"></a>服务对象</h4><p>建行的公司金融板块服务对象涵盖广泛，主要包括：</p>
+<ul>
+<li><strong>大型企业</strong>：如央企、地方国企、大型民企。</li>
+<li><strong>中小企业</strong>：普惠金融业务重点扶持中小微企业发展。</li>
+<li><strong>跨国企业</strong>：为有跨境金融需求的外资企业和跨国公司提供服务。</li>
+<li><strong>特定行业</strong>：如制造业、能源、基建、医疗、农业等行业的企业。</li>
+</ul>
+<h4 id="产品与解决方案"><a href="#产品与解决方案" class="headerlink" title="产品与解决方案"></a>产品与解决方案</h4><p>建行根据企业的不同需求设计了多样化的金融产品与解决方案：</p>
+<ul>
+<li><strong>综合金融解决方案</strong>：一站式满足企业融资、支付、结算、投资等需求。</li>
+<li><strong>行业专项方案</strong>：针对不同行业，如基建、房地产、科技创新企业，提供定制化服务。</li>
+<li><strong>智慧金融方案</strong>：<ul>
+<li>利用金融科技，为企业提供数字化、智能化的服务，如企业网银、电子发票等。</li>
+</ul>
+</li>
+<li><strong>跨境金融解决方案</strong>：为有进出口贸易需求的企业设计跨境结算和融资服务。</li>
+</ul>
+<h4 id="优势"><a href="#优势" class="headerlink" title="优势"></a>优势</h4><h5 id="（1）网络覆盖广泛"><a href="#（1）网络覆盖广泛" class="headerlink" title="（1）网络覆盖广泛"></a>（1）网络覆盖广泛</h5><p>建行拥有全球性服务网络，在国内设有大量分支机构，并在海外建立了重要的分支网络，为企业提供国内外联动的金融服务。</p>
+<h5 id="（2）科技创新能力"><a href="#（2）科技创新能力" class="headerlink" title="（2）科技创新能力"></a>（2）科技创新能力</h5><p>建行注重金融科技的运用，推出了多款智能化服务平台，如“建行云”、“智慧政务平台”，助力企业数字化转型。</p>
+<h5 id="（3）政策支持"><a href="#（3）政策支持" class="headerlink" title="（3）政策支持"></a>（3）政策支持</h5><p>作为国有大行，建行与国家政策高度契合，尤其在支持重点项目融资、普惠金融和绿色金融方面具有优势。</p>
+<h5 id="（4）一体化服务"><a href="#（4）一体化服务" class="headerlink" title="（4）一体化服务"></a>（4）一体化服务</h5><p>建行的公司金融板块整合了银行、投资银行、保险、租赁等多种业务，提供“一站式”金融服务。</p>
+<h3 id="资金资管板块"><a href="#资金资管板块" class="headerlink" title="资金资管板块"></a>资金资管板块</h3><h3 id="个人金融板块"><a href="#个人金融板块" class="headerlink" title="个人金融板块"></a>个人金融板块</h3><h3 id="风险管理板块"><a href="#风险管理板块" class="headerlink" title="风险管理板块"></a>风险管理板块</h3><h3 id="科技渠运板块"><a href="#科技渠运板块" class="headerlink" title="科技渠运板块"></a>科技渠运板块</h3><h3 id="综合管理板块"><a href="#综合管理板块" class="headerlink" title="综合管理板块"></a>综合管理板块</h3></article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E9%93%B6%E8%A1%8C/">银行</a></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/2024/11/05/%E5%B8%81%E5%9C%88%E6%97%A5%E8%AE%B0(%E4%B8%80)/" title="币圈日记(一）"><img class="cover" src="/images/crpytoDiary.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">Previous</div><div class="info-item-2">币圈日记(一）</div></div><div class="info-2"><div class="info-item-1">真正的进入币圈其实就是在2024年，但是第一次接触币圈应该是在2019年甚至更早以前。 第一次系统的了解比特币还是因为王自如，zealer的科技相对论节目出了一期关于《比特币，数字黄金》的栏目，让我真正的认识了何为比特币，中本聪，白皮书，加密算法。  2019年疫情来临的前夕，比特币疯涨我加入了好几个关于币圈的电报群，亲眼见证了很多例币圈造富的神话，但是币圈还有加密对我来说还是一个未知的事物。 疫情期间，花总丢了金箍棒发布了《口罩猎人》这个纪录片，让我认识了林栋这个口罩猎人，对于短期的投机生意引起了我的兴趣。  后来看到经纬资本的创始人张颖在微博上分享了关于一个90后炒口罩的视频，主人公正是币圈疯涨时候资产过亿的一员，我真正见识了另外一种人生。   （PS，知道张颖是因为罗永浩参演的创业电影《燃点》，而知道罗永浩又是因为他和王自如辩论，而王自如，我不记得我是通过何种途径开始关注他的了，这个时代会让你更容易找到让你感兴趣的同类）   而2024年我正式进入币圈的原因，则是因为一个知乎用户（00后富一代），他的知乎账户目前已经被封禁了，但是推特（现在叫X）账号到我写这篇文章时还在更新。  00后富一代的知乎内容，有推特网友备份： 00后富一代的知乎索引  他在知乎中写了很多能打动我的东西，让我不自觉地去深究他所在的行业，由于他给了我足够多的细节，再加上我的技术积累已经到位，我无师自通的成为了币安的用户 </div></div></div></a><a class="pagination-related" href="/2024/10/22/%E4%BA%8C%E8%99%8E%E5%9B%9E%E5%AE%B6/" title="二虎回家"><img class="cover" src="/images/%E4%BA%8C%E8%99%8E%E5%9B%9E%E5%AE%B6/erhuGohome.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">Next</div><div class="info-item-2">二虎回家</div></div><div class="info-2"><div class="info-item-1">二虎是我们门面房附近的流浪猫，特别小 我一直想养一只猫, 帅帅有一只猫名字叫“小帅哥”，但是它总是在家里到处乱尿尿，车子里还有家里各个角落都有它的尿味，给我留下了不小的阴影  我和二虎特别投缘，一直想把它带回家，但是我一直没有做好养它的准备，直到那天晚上它跳到了我车子的后备箱，和我一起回了家 之所以给它起名字叫二虎，是因为我看到他的第一眼觉得他的花纹真的好好看像一只小老虎一样，后来我仔细查了查发现原来它这种花色的猫叫做橘猫，属于中华田园猫的一种，直白说就是和三花，狸花猫一样是我们国家的小土猫，好养活 决定给他起的名字里面有一个虎字之后，我觉得应该起一个通俗的接地气的名字，我想起来了电影《投名状》里面刘德华饰演的赵二虎，为人英勇讲义气，我希望二虎是一个忠诚好相处的小猫咪 回到家的第一天晚上，它的身上特别的脏毛皮上都是灰，但是它一直非常粘人，无论是我坐在桌子上还是扒在桌子上，它都会过来蹭我的手要一直贴着我   刚回家的第一周只要它的视野里看不到人类，它都会慌张的大叫 因为它的身上很脏而且还有寄生虫，再加上没有给它打疫苗，我把房子的所有门都关了起来，我在客厅铺了一个瑜伽垫陪它一起睡在客厅我很担心它不会用猫砂盆，在网上搜了很多教程如何教流浪猫使用猫砂盆但是它一直拉稀，也许是因为慌张也有可能它一直都是这样肠胃不好直到第三天，在帅帅的催促下，我带它去了宠物医院，通过医生得知原来二虎才两个月大，还在经历换牙期 经过一周吃猫粮的生活，二虎明显的体型大了一圈 趴在帅帅的大腿上咪着了，在哪里都能睡的睡神  我上厕所的时候也会在旁边陪着  但是好景不长 有一天回来发现它在那里母鸡蹲，平时刷了很多养猫的短视频具备了一些知识的我知道这是小猫难受的表现，然后猫粮和水一点都没动 觉得它兴致不高，给它拆了一个猫条，送到它的嘴边它竟然不为所动 帅帅说可能是口炎，但是我们没有管他 直到两天后，它的精神状况越来越差，我仔细研究了一下，又问了AI助手，我确定它是口炎，立刻给他买了喷雾 </div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BC%95%E8%A8%80%EF%BC%9A"><span class="toc-number">1.</span> <span class="toc-text">引言：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86%E7%9A%84%E5%A4%A7%E8%87%B4%E9%87%91%E8%9E%8D%E4%BD%93%E7%B3%BB"><span class="toc-number">2.</span> <span class="toc-text">中国大陆的大致金融体系</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%93%B6%E8%A1%8C%E7%B1%BB%E6%9C%BA%E6%9E%84"><span class="toc-number">2.1.</span> <span class="toc-text">银行类机构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%80%E5%8F%91%E6%80%A7%E9%87%91%E8%9E%8D%E6%9C%BA%E6%9E%84"><span class="toc-number">2.1.1.</span> <span class="toc-text">开发性金融机构</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%BD%E5%AE%B6%E5%BC%80%E5%8F%91%E9%93%B6%E8%A1%8C"><span class="toc-number">2.1.1.1.</span> <span class="toc-text">国家开发银行</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%94%BF%E7%AD%96%E6%80%A7%E9%93%B6%E8%A1%8C"><span class="toc-number">2.1.1.2.</span> <span class="toc-text">政策性银行</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%AD%E5%9B%BD%E8%BF%9B%E5%87%BA%E5%8F%A3%E9%93%B6%E8%A1%8C"><span class="toc-number">2.1.1.2.1.</span> <span class="toc-text">中国进出口银行</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%AD%E5%9B%BD%E5%86%9C%E4%B8%9A%E5%8F%91%E5%B1%95%E9%93%B6%E8%A1%8C"><span class="toc-number">2.1.1.2.2.</span> <span class="toc-text">中国农业发展银行</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%BD%E6%9C%89%E5%A4%A7%E5%9E%8B%E5%95%86%E4%B8%9A%E9%93%B6%E8%A1%8C"><span class="toc-number">2.1.1.3.</span> <span class="toc-text">国有大型商业银行</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%A8%E5%9B%BD%E6%80%A7%E8%82%A1%E4%BB%BD%E5%88%B6%E5%95%86%E4%B8%9A%E9%93%B6%E8%A1%8C"><span class="toc-number">2.1.1.4.</span> <span class="toc-text">全国性股份制商业银行</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%81%E5%88%B8%E7%B1%BB%E6%9C%BA%E6%9E%84"><span class="toc-number">2.2.</span> <span class="toc-text">证券类机构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%81%E5%88%B8%E5%85%AC%E5%8F%B8"><span class="toc-number">2.3.</span> <span class="toc-text">证券公司</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E9%87%91%E7%AE%A1%E7%90%86%E5%85%AC%E5%8F%B8"><span class="toc-number">2.4.</span> <span class="toc-text">基金管理公司</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%9F%E8%B4%A7%E5%85%AC%E5%8F%B8"><span class="toc-number">2.5.</span> <span class="toc-text">期货公司</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%9D%E9%99%A9%E4%B8%9A"><span class="toc-number">2.6.</span> <span class="toc-text">保险业</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%BA%E8%BA%AB%E4%BF%9D%E9%99%A9"><span class="toc-number">2.6.1.</span> <span class="toc-text">人身保险</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B4%A2%E4%BA%A7%E4%BF%9D%E9%99%A9"><span class="toc-number">2.6.2.</span> <span class="toc-text">财产保险</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%8D%E4%BF%9D%E9%99%A9%E5%85%AC%E5%8F%B8"><span class="toc-number">2.6.3.</span> <span class="toc-text">再保险公司</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%94%BF%E7%AD%96%E6%80%A7%E5%85%AC%E5%8F%B8"><span class="toc-number">2.6.4.</span> <span class="toc-text">政策性公司</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E4%BB%96"><span class="toc-number">2.7.</span> <span class="toc-text">其他</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%91%E8%9E%8D%E8%B5%84%E4%BA%A7%E7%AE%A1%E7%90%86%E5%85%AC%E5%8F%B8"><span class="toc-number">2.7.1.</span> <span class="toc-text">金融资产管理公司</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%91%E8%9E%8D%E7%A7%9F%E8%B5%81%E5%85%AC%E5%8F%B8%E7%AD%89%E5%85%B6%E4%BB%96%E7%B1%BB%E9%87%91%E8%9E%8D%E6%9C%BA%E6%9E%84"><span class="toc-number">2.7.2.</span> <span class="toc-text">金融租赁公司等其他类金融机构</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%AD%E5%9B%BD%E5%BB%BA%E8%AE%BE%E9%93%B6%E8%A1%8C%E6%80%BB%E8%A1%8C%E5%86%85%E9%83%A8%E7%BB%84%E7%BB%87%E6%9E%B6%E6%9E%84"><span class="toc-number">3.</span> <span class="toc-text">中国建设银行总行内部组织架构</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BB%BA%E8%AE%BE%E9%93%B6%E8%A1%8C%E6%80%BB%E8%A1%8C%E7%BB%84%E7%BB%87%E6%9E%B6%E6%9E%84%E5%9B%BE%E5%A6%82%E4%B8%8B%EF%BC%9A"><span class="toc-number">3.1.</span> <span class="toc-text">建设银行总行组织架构图如下：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%AC%E5%8F%B8%E9%87%91%E8%9E%8D%E6%9D%BF%E5%9D%97"><span class="toc-number">3.1.1.</span> <span class="toc-text">公司金融板块</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%9A%E5%8A%A1%E8%8C%83%E5%9B%B4"><span class="toc-number">3.1.1.1.</span> <span class="toc-text">业务范围</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%881%EF%BC%89%E4%BC%81%E4%B8%9A%E8%9E%8D%E8%B5%84"><span class="toc-number">3.1.1.1.1.</span> <span class="toc-text">（1）企业融资</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%882%EF%BC%89%E8%B5%84%E9%87%91%E7%AE%A1%E7%90%86"><span class="toc-number">3.1.1.1.2.</span> <span class="toc-text">（2）资金管理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%883%EF%BC%89%E6%8A%95%E8%B5%84%E9%93%B6%E8%A1%8C%E4%B8%9A%E5%8A%A1"><span class="toc-number">3.1.1.1.3.</span> <span class="toc-text">（3）投资银行业务</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%884%EF%BC%89%E5%9B%BD%E9%99%85%E4%B8%9A%E5%8A%A1"><span class="toc-number">3.1.1.1.4.</span> <span class="toc-text">（4）国际业务</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%885%EF%BC%89%E7%89%B9%E8%89%B2%E6%9C%8D%E5%8A%A1"><span class="toc-number">3.1.1.1.5.</span> <span class="toc-text">（5）特色服务</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E5%AF%B9%E8%B1%A1"><span class="toc-number">3.1.1.2.</span> <span class="toc-text">服务对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%A7%E5%93%81%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-number">3.1.1.3.</span> <span class="toc-text">产品与解决方案</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BC%98%E5%8A%BF"><span class="toc-number">3.1.1.4.</span> <span class="toc-text">优势</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%881%EF%BC%89%E7%BD%91%E7%BB%9C%E8%A6%86%E7%9B%96%E5%B9%BF%E6%B3%9B"><span class="toc-number">3.1.1.4.1.</span> <span class="toc-text">（1）网络覆盖广泛</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%882%EF%BC%89%E7%A7%91%E6%8A%80%E5%88%9B%E6%96%B0%E8%83%BD%E5%8A%9B"><span class="toc-number">3.1.1.4.2.</span> <span class="toc-text">（2）科技创新能力</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%883%EF%BC%89%E6%94%BF%E7%AD%96%E6%94%AF%E6%8C%81"><span class="toc-number">3.1.1.4.3.</span> <span class="toc-text">（3）政策支持</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%EF%BC%884%EF%BC%89%E4%B8%80%E4%BD%93%E5%8C%96%E6%9C%8D%E5%8A%A1"><span class="toc-number">3.1.1.4.4.</span> <span class="toc-text">（4）一体化服务</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B5%84%E9%87%91%E8%B5%84%E7%AE%A1%E6%9D%BF%E5%9D%97"><span class="toc-number">3.1.2.</span> <span class="toc-text">资金资管板块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AA%E4%BA%BA%E9%87%91%E8%9E%8D%E6%9D%BF%E5%9D%97"><span class="toc-number">3.1.3.</span> <span class="toc-text">个人金融板块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86%E6%9D%BF%E5%9D%97"><span class="toc-number">3.1.4.</span> <span class="toc-text">风险管理板块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%91%E6%8A%80%E6%B8%A0%E8%BF%90%E6%9D%BF%E5%9D%97"><span class="toc-number">3.1.5.</span> <span class="toc-text">科技渠运板块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%BC%E5%90%88%E7%AE%A1%E7%90%86%E6%9D%BF%E5%9D%97"><span class="toc-number">3.1.6.</span> <span class="toc-text">综合管理板块</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Posts</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2025/03/10/Cursor%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" title="Cursor使用教程"><img src="/images/Cursor%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/Cursor.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Cursor使用教程"/></a><div class="content"><a class="title" href="/2025/03/10/Cursor%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" title="Cursor使用教程">Cursor使用教程</a><time datetime="2025-03-09T16:00:00.000Z" title="Created 2025-03-10 00:00:00">2025-03-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/03/09/%E8%80%83%E8%99%91%E5%87%A0%E4%B8%AA%E7%8E%B0%E5%AE%9E%E9%97%AE%E9%A2%98/" title="考虑几个现实问题"><img src="/images/%E8%80%83%E8%99%91%E5%87%A0%E4%B8%AA%E7%8E%B0%E5%AE%9E%E9%97%AE%E9%A2%98/%E8%80%83%E8%99%91%E5%87%A0%E4%B8%AA%E7%8E%B0%E5%AE%9E%E9%97%AE%E9%A2%98.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="考虑几个现实问题"/></a><div class="content"><a class="title" href="/2025/03/09/%E8%80%83%E8%99%91%E5%87%A0%E4%B8%AA%E7%8E%B0%E5%AE%9E%E9%97%AE%E9%A2%98/" title="考虑几个现实问题">考虑几个现实问题</a><time datetime="2025-03-08T16:00:00.000Z" title="Created 2025-03-09 00:00:00">2025-03-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/03/06/%E4%BF%A1%E6%81%AF%E9%A1%B9%E7%9B%AE%E9%AB%98%E7%BA%A7%E7%AE%A1%E7%90%86%EF%BC%88%E4%B8%89%EF%BC%89/" title="信息项目高级管理（三）"><img src="/images/%E4%BF%A1%E6%81%AF%E9%A1%B9%E7%9B%AE%E9%AB%98%E7%BA%A7%E7%AE%A1%E7%90%86/%E4%BF%A1%E6%81%AF%E9%A1%B9%E7%9B%AE%E9%AB%98%E7%BA%A7%E7%AE%A1%E7%90%86.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="信息项目高级管理（三）"/></a><div class="content"><a class="title" href="/2025/03/06/%E4%BF%A1%E6%81%AF%E9%A1%B9%E7%9B%AE%E9%AB%98%E7%BA%A7%E7%AE%A1%E7%90%86%EF%BC%88%E4%B8%89%EF%BC%89/" title="信息项目高级管理（三）">信息项目高级管理（三）</a><time datetime="2025-03-05T16:00:00.000Z" title="Created 2025-03-06 00:00:00">2025-03-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/03/03/Web3%E8%AF%A6%E8%A7%A3/" title="Web3详解"><img src="/images/Web3/web3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Web3详解"/></a><div class="content"><a class="title" href="/2025/03/03/Web3%E8%AF%A6%E8%A7%A3/" title="Web3详解">Web3详解</a><time datetime="2025-03-02T16:00:00.000Z" title="Created 2025-03-03 00:00:00">2025-03-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/03/03/%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81%E5%85%A8%E8%A7%A3%E6%9E%90%EF%BC%9A%E4%BB%8E%E6%8A%80%E6%9C%AF%E5%88%B0%E9%87%91%E8%9E%8D%EF%BC%8C%E7%9C%8B%E7%A9%BF%E8%A1%8C%E4%B8%9A%E7%9C%9F%E7%9B%B8/" title="加密货币技术解析"><img src="/images/Web3/cryptoCoin.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="加密货币技术解析"/></a><div class="content"><a class="title" href="/2025/03/03/%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81%E5%85%A8%E8%A7%A3%E6%9E%90%EF%BC%9A%E4%BB%8E%E6%8A%80%E6%9C%AF%E5%88%B0%E9%87%91%E8%9E%8D%EF%BC%8C%E7%9C%8B%E7%A9%BF%E8%A1%8C%E4%B8%9A%E7%9C%9F%E7%9B%B8/" title="加密货币技术解析">加密货币技术解析</a><time datetime="2025-03-02T16:00:00.000Z" title="Created 2025-03-03 00:00:00">2025-03-03</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(/images/main1_footer.jpg);"><div id="footer-wrap"></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Reading Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
