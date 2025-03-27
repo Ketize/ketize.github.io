@@ -8,6 +8,9 @@
 .search-close-button { /* 输入框关闭按钮样式 */
     color: #ffffff !important;
 }
+.fas fa-times {
+    color: #ffffff !important;
+}
 .search-dialog-title { /* 搜索栏Search字样样式 */
     color: #ffffff !important;
 }
