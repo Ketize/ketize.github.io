@@ -5,10 +5,13 @@
     padding: 10px; /* 设置内边距 */
     /* 根据需要添加更多样式 */
 }
-.search-dialog-title {
+.search-close-button { /* 输入框关闭按钮样式 */
     color: #ffffff !important;
 }
-.search-dialog hr {
+.search-dialog-title { /* 搜索栏Search字样样式 */
+    color: #ffffff !important;
+}
+.search-dialog hr { /* 搜索栏下方剪刀图形不显示 */
     display: none;
 }
 .search-input {
