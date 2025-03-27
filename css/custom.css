@@ -5,6 +5,9 @@
     padding: 10px; /* 设置内边距 */
     /* 根据需要添加更多样式 */
 }
+.search-dialog-title {
+    color: #ffffff !important;
+}
 .search-dialog hr {
     display: none;
 }
