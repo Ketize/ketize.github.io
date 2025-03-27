@@ -5,6 +5,9 @@
     padding: 10px; /* 设置内边距 */
     /* 根据需要添加更多样式 */
 }
+.search-dialog hr {
+    display: none;
+}
 .search-input {
     background-color: transparent; /* 输入框背景透明 */
     color: #000000; /* 设置文本颜色为黑色 */
